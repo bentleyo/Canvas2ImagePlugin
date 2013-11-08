@@ -42,7 +42,7 @@ public class Canvas2ImagePlugin extends CordovaPlugin {
 				callbackContext.error("Missing base64 string");
 			
 			// Create the bitmap from the base64 string
-			Log.d("Canvas2ImagePlugin", base64);
+			//Log.d("Canvas2ImagePlugin", base64);
 			byte[] decodedString = Base64.decode(base64, Base64.DEFAULT);
 			Bitmap bmp = BitmapFactory.decodeByteArray(decodedString, 0, decodedString.length);
 			if (bmp == null) {
